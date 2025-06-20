@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="32x32" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			try {
+				/** @type {'light' | 'dark' | 'system'} */
+				const savedTheme = localStorage.getItem('evidence-theme') ?? 'system';
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				const theme = savedTheme === 'system' ? (prefersDark ? 'dark' : 'light') : savedTheme;
+				document.documentElement.classList.add(`theme-${theme}`);
+			} catch (e) {}
+		</script>
+		
+		<link href="/_app/immutable/assets/0.CWrNUCep.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/VennDiagram.D7OGjfZg.css" rel="stylesheet">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.D4UH2_gm.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/entry.CBQZo9V7.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/scheduler.cXSv0lVe.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.MjppL0aT.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper.D7HrI6pR.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.DpaiaTSd.js">
+		<link rel="modulepreload" href="/_app/immutable/nodes/0.ROdg0Chy.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/VennDiagram.svelte_svelte_type_style_lang.GzCd6CPB.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.rV6zwFgL.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/profile.BW8tN6E9.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/setTrackProxy.Cyfckp0w.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/stores.VHUHsHjd.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.JL3Ey8Ma.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/AccordionItem.OUawiIxP.js">
+		<link rel="modulepreload" href="/_app/immutable/nodes/5.Dk9hQ8Lf.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/Alert.BtjY5fTI.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/Heatmap.B6t5kZVW.js"><title>Evidence</title><!-- HEAD_svelte-2igo1p_START --> <meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@evidence_dev"><!-- HEAD_svelte-2igo1p_END -->
+	</head>
+	<body>
+		<script>
+			
+		</script>
+		<div>
+			<!-- SvelteKit Hydrated Content -->
+			   <div class="z-[1] fixed right-0 bottom-0 mx-10 my-6 w-80"></div> <div data-sveltekit-preload-data="hover" class="antialiased"> <header class="fixed w-full top-0 z-40 flex h-12 shrink-0 justify-start items-center gap-x-4 border-b border-base-300/50 bg-base-100/90 backdrop-blur print:hidden"><div class=" max-w-7xl mx-auto px-5 sm:px-6 md:px-12 flex flex-1 items-center justify-between" style="max-width:undefinedpx;"><div class="flex gap-x-4 items-center"><button type="button" class="text-base-content hover:bg-base-200 rounded-lg p-1 -ml-1 transition-all duration-500 md:hidden"><span class="sr-only" data-svelte-h="svelte-73kebv">Open sidebar</span> <svg class="w-5 h-5" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path d="M4 18l16 0"></path></svg></button> <a href="/" class="text-sm font-bold text-base-content hidden md:block"><img src="/gpu-fine-2.png" alt="Home" class="h-5 aspect-auto block dark:hidden" href="/"> <img src="/gpu-fine-2.png" alt="Home" class="h-5 aspect-auto hidden dark:block" href="/"></a></div> <div class="flex gap-2 text-sm items-center"> <div class="flex gap-2 items-center">   </div> <div class="relative"> <button type="button" tabindex="0" aria-controls="HQgsBXBplY" aria-expanded="false" data-state="closed" id="lote-qW466" data-melt-dropdown-menu-trigger="" data-menu-trigger="" class="inline-flex items-center justify-center font-medium whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-base-content-muted disabled:pointer-events-none disabled:opacity-50 hover:text-base-content h-8 rounded-md text-xs px-1 hover:bg-base-200 shadow-base-200" aria-label="Menu" data-button-root=""><svg class="h-6 w-6" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path><path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path></svg></button> </div></div></div></header> <div class=" max-w-7xl print:w-[650px] print:md:w-[841px] mx-auto print:md:px-0 print:px-0 px-6 sm:px-8 md:px-12 flex justify-start" style="max-width:undefinedpx;"><div class="print:hidden">  <aside class="w-48 flex-none hidden md:flex"><div class="hidden: md:block fixed w-48 top-20 bottom-8 overflow-y-auto flex-1 text-sm pretty-scrollbar"><div class="flex flex-col pb-6"><a class="sticky top-0 bg-base-100 shadow shadow-base-100 font-semibold pb-1 mb-1 group inline-block capitalize hover:underline text-base-heading" href="/">Home</a> </div> <div class="flex flex-col pb-6"><span class="sticky top-0 bg-base-100 shadow shadow-base-100 font-semibold pb-1 mb-1 group inline-block capitalize text-base-heading z-10">1. Overall  </span>  <a href="/1.%20Overall/summary" class="group inline-block py-1 capitalize transition-all duration-100 text-primary">summary  </a>  </div><div class="flex flex-col pb-6"><span class="sticky top-0 bg-base-100 shadow shadow-base-100 font-semibold pb-1 mb-1 group inline-block capitalize text-base-heading z-10">2. Drilldowns  </span>  <a href="/2.%20Drilldowns/AIB" class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content">AIB  </a>  <a href="/2.%20Drilldowns/All-GPUs" class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content">All GPUs  </a>  <a href="/2.%20Drilldowns/Nvidia-AMD" class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content">Nvidia AMD  </a>  <a href="/2.%20Drilldowns/Retailer" class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content">Retailer  </a>  </div></div> <div class="fixed bottom-0 text-xs py-2" data-svelte-h="svelte-fworv4"><a href="https://www.evidence.dev" class="bg-gradient-to-r inline-block antialiased font-medium">Built with Evidence</a></div></aside></div> <main class="md:pl-8 md:pr-8  mt-16 sm:mt-20 flex-grow overflow-x-hidden print:px-0 print:mt-8"><div class="print:hidden"><div class="flex items-start mt-0 whitespace-nowrap overflow-auto"><div class="inline-flex items-center text-sm capitalize gap-1 text-base-content-muted mb-2 sm:mb-4"><a href="/" class="hover:underline">Home </a><svg class="icon icon-tabler icon-tabler-chevron-right" width="12px" height="12px" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 6l6 6l-6 6"></path></svg> <span class="cursor-default">1. Overall</span><svg class="icon icon-tabler icon-tabler-chevron-right" width="12px" height="12px" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 6l6 6l-6 6"></path></svg> <span class="cursor-default">summary</span></div></div></div> <article id="evidence-main-article" class="select-text markdown pb-10">      <h1 class="markdown" id="weekly-summary" data-svelte-h="svelte-1bsfpf5"><a href="#weekly-summary">Weekly Summary</a></h1> <div class="block text-xs text-gray-500 leading-none mt-0 pb-3 not-prose"><span>Latest data for week of  <span style="color: ">Jun 9, 2025 </span></span></div> <div class="alert border-info/50 bg-info/10 text-info border px-3 py-2 mb-4 rounded-sm border-base-content/50 bg-base-content/10 svelte-m0fxpx" role="alert"><div class="text-xs" data-svelte-h="svelte-yo94hn"><p class="font-bold">Note</p> <p>This dashboard analyzes data from GPU restock tracking communities. The key metric, <strong>Restock Alerts</strong>, serves as a proxy for market scarcity.</p> <ul class="list-disc pl-5"><li><strong>A high number of alerts</strong> suggests volatile supply and high demand, as products sell out quickly.</li> <li><strong>A low number of alerts</strong> suggests supply is stabilizing and products are more readily available, reducing the need for notifications.</li></ul> <p>Therefore, a decrease in weekly alerts is generally a positive sign of a healthier, more accessible market for consumers.</p></div></div> <div class="over-container svelte-1ursthx"> </div> <div class="over-container svelte-1ursthx"> </div> <h2 class="markdown" id="restock-alerts-analysis" data-svelte-h="svelte-3n3j72"><a href="#restock-alerts-analysis">Restock Alerts Analysis</a></h2>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">Total # of Restock Alerts  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="07BqL8_Zq6" id="Wj2Sw2J_QD" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">1,391 </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 12.5L50 12.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr11-cls-44"></path>
+<g clip-path="url(#zr11-c0)">
+<path d="M1 12.4L3.5 12.4L6 12.1L8.6 12L11.1 11.9L13.6 8.5L16.1 7.2L18.7 5L21.2 3.6L23.7 1.6L26.3 5.1L28.8 4.8L31.3 5.5L33.9 6.9L36.4 7.6L38.9 9.2L41.4 8.8L44 10.4L46.5 10.1L49 9L49 12.5L46.5 12.5L44 12.5L41.4 12.5L38.9 12.5L36.4 12.5L33.9 12.5L31.3 12.5L28.8 12.5L26.3 12.5L23.7 12.5L21.2 12.5L18.7 12.5L16.1 12.5L13.6 12.5L11.1 12.5L8.6 12.5L6 12.5L3.5 12.5L1 12.5Z" fill="#29292b" fill-opacity="0.7" class="zr11-cls-46"></path>
+<path d="M1 12.4L3.5 12.4L6 12.1L8.6 12L11.1 11.9L13.6 8.5L16.1 7.2L18.7 5L21.2 3.6L23.7 1.6L26.3 5.1L28.8 4.8L31.3 5.5L33.9 6.9L36.4 7.6L38.9 9.2L41.4 8.8L44 10.4L46.5 10.1L49 9" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr11-cls-47"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr11-cls-44"></path>
+<defs >
+<clipPath id="zr11-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr11-cls-45"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr11-cls-44:hover {
+pointer-events:none;
+}
+.zr11-cls-45:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr11-cls-46:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr11-cls-47:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-positive"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9650;<!-- HTML_TAG_END --></span> <span>45.8%</span> <span>vs. Last Week</span></span></span></p></div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">Avg # of Daily Alerts  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="D6p3LtRpo8" id="20pu-Ke8ZC" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">199 </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 13.5L50 13.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr12-cls-48"></path>
+<g clip-path="url(#zr12-c0)">
+<path d="M1 13L3.5 13.1L6 12.7L8.6 12.6L11.1 12.5L13.6 8.9L16.1 7.4L18.7 5.1L21.2 3.6L23.7 1.4L26.3 5.2L28.8 4.9L31.3 5.6L33.9 7.2L36.4 7.8L38.9 9.6L41.4 9.1L44 10.9L46.5 10.6L49 9.4L49 13.1L46.5 13.1L44 13.1L41.4 13.1L38.9 13.1L36.4 13.1L33.9 13.1L31.3 13.1L28.8 13.1L26.3 13.1L23.7 13.1L21.2 13.1L18.7 13.1L16.1 13.1L13.6 13.1L11.1 13.1L8.6 13.1L6 13.1L3.5 13.1L1 13.1Z" fill="#29292b" fill-opacity="0.7" class="zr12-cls-50"></path>
+<path d="M1 13L3.5 13.1L6 12.7L8.6 12.6L11.1 12.5L13.6 8.9L16.1 7.4L18.7 5.1L21.2 3.6L23.7 1.4L26.3 5.2L28.8 4.9L31.3 5.6L33.9 7.2L36.4 7.8L38.9 9.6L41.4 9.1L44 10.9L46.5 10.6L49 9.4" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr12-cls-51"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr12-cls-48"></path>
+<defs >
+<clipPath id="zr12-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr12-cls-49"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr12-cls-48:hover {
+pointer-events:none;
+}
+.zr12-cls-49:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr12-cls-50:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr12-cls-51:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-positive"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9650;<!-- HTML_TAG_END --></span> <span>45.8%</span> <span>vs. Last Week</span></span></span></p></div>   <div role="none" class="chart-container mt-2 mb-3 svelte-db4qxn"><div role="status" class="animate-pulse"><span class="sr-only" data-svelte-h="svelte-1wtojot">Loading...</span> <div class="bg-base-100 rounded-md max-w-[100%]" style="height:173px; margin-top: 15px; margin-bottom: 31px;"></div></div>  <div class="chart-footer svelte-db4qxn"> </div> </div>    <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">Weekday Alert %  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="6eVeZ74Ykr" id="7CwKeVxG8Q" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">71.6% </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 15.5L50 15.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr13-cls-52"></path>
+<g clip-path="url(#zr13-c0)">
+<path d="M1 1.1L3.5 2.1L6 1.5L8.6 1.2L11.1 2.6L13.6 4.1L16.1 5.7L18.7 2.9L21.2 3.5L23.7 2.7L26.3 2.9L28.8 3L31.3 2.7L33.9 3.7L36.4 2.3L38.9 2.9L41.4 3L44 3.2L46.5 3.8L49 4.3L49 15L46.5 15L44 15L41.4 15L38.9 15L36.4 15L33.9 15L31.3 15L28.8 15L26.3 15L23.7 15L21.2 15L18.7 15L16.1 15L13.6 15L11.1 15L8.6 15L6 15L3.5 15L1 15Z" fill="#29292b" fill-opacity="0.7" class="zr13-cls-54"></path>
+<path d="M1 1.1L3.5 2.1L6 1.5L8.6 1.2L11.1 2.6L13.6 4.1L16.1 5.7L18.7 2.9L21.2 3.5L23.7 2.7L26.3 2.9L28.8 3L31.3 2.7L33.9 3.7L36.4 2.3L38.9 2.9L41.4 3L44 3.2L46.5 3.8L49 4.3" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr13-cls-55"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr13-cls-52"></path>
+<defs >
+<clipPath id="zr13-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr13-cls-53"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr13-cls-52:hover {
+pointer-events:none;
+}
+.zr13-cls-53:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr13-cls-54:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr13-cls-55:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-negative"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9660;<!-- HTML_TAG_END --></span> <span>-4.1%</span> <span>vs. Last Week</span></span></span></p></div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">Avg Mins b/w Alerts  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="BzG815H2Np" id="tOe7_mPF0U" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">42.91 </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 15.5L50 15.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr14-cls-56"></path>
+<g clip-path="url(#zr14-c0)">
+<path d="M1 13.9L3.5 3L6 13.4L8.6 13.6L11.1 13.5L13.6 14.6L16.1 14.6L18.7 14.7L21.2 14.7L23.7 14.8L26.3 14.7L28.8 14.7L31.3 14.7L33.9 14.6L36.4 14.5L38.9 14.3L41.4 14.4L44 14L46.5 14.1L49 14.4L49 15L46.5 15L44 15L41.4 15L38.9 15L36.4 15L33.9 15L31.3 15L28.8 15L26.3 15L23.7 15L21.2 15L18.7 15L16.1 15L13.6 15L11.1 15L8.6 15L6 15L3.5 15L1 15Z" fill="#29292b" fill-opacity="0.7" class="zr14-cls-58"></path>
+<path d="M1 13.9L3.5 3L6 13.4L8.6 13.6L11.1 13.5L13.6 14.6L16.1 14.6L18.7 14.7L21.2 14.7L23.7 14.8L26.3 14.7L28.8 14.7L31.3 14.7L33.9 14.6L36.4 14.5L38.9 14.3L41.4 14.4L44 14L46.5 14.1L49 14.4" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr14-cls-59"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr14-cls-56"></path>
+<defs >
+<clipPath id="zr14-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr14-cls-57"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr14-cls-56:hover {
+pointer-events:none;
+}
+.zr14-cls-57:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr14-cls-58:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr14-cls-59:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-positive"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9650;<!-- HTML_TAG_END --></span> <span>37.8%</span> <span>vs. Last Week</span></span></span></p></div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">NVIDIA / AMD Alert Ratio  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="MW8DEKXsw5" id="ua9cTj3hTL" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">2.99 </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 15.5L50 15.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr15-cls-60"></path>
+<g clip-path="url(#zr15-c0)">
+<path d="M13.6 9.3L16.1 8.2L18.7 7.2L21.2 6.9L23.7 5.4L26.3 9.6L28.8 9.4L31.3 9.4L33.9 8.9L36.4 5.2L38.9 3.3L41.4 5.1L44 5.2L46.5 1.8L49 6L49 15L46.5 15L44 15L41.4 15L38.9 15L36.4 15L33.9 15L31.3 15L28.8 15L26.3 15L23.7 15L21.2 15L18.7 15L16.1 15L13.6 15Z" fill="#29292b" fill-opacity="0.7" class="zr15-cls-62"></path>
+<path d="M13.6 9.3L16.1 8.2L18.7 7.2L21.2 6.9L23.7 5.4L26.3 9.6L28.8 9.4L31.3 9.4L33.9 8.9L36.4 5.2L38.9 3.3L41.4 5.1L44 5.2L46.5 1.8L49 6" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr15-cls-63"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr15-cls-60"></path>
+<defs >
+<clipPath id="zr15-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr15-cls-61"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr15-cls-60:hover {
+pointer-events:none;
+}
+.zr15-cls-61:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr15-cls-62:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr15-cls-63:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-negative"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9660;<!-- HTML_TAG_END --></span> <span>-32.0%</span> <span>vs. Last Week</span></span></span></p></div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">Most Frequent Alert: Card  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="NodBtIA-S0" id="klXxRtBAD4" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">RTX 5080 </span> </div> </div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">Most Frequent Alert: Model  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="Ww7s5pQpgg" id="Y8C4iMM2vw" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">GIGABYTE RX 9070 XT GAMING OC </span> </div> </div> <br><br> <h2 class="markdown" id="price-analysis" data-svelte-h="svelte-13okjun"><a href="#price-analysis">Price Analysis</a></h2>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">Avg Price  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="gd4tt5Kgt6" id="yHxt_IIJn3" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">$1,272 </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 15.5L50 15.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr16-cls-64"></path>
+<g clip-path="url(#zr16-c0)">
+<path d="M1 4.8L3.5 0.9L6 1L8.6 2.7L11.1 3.1L13.6 5.8L16.1 6.2L18.7 6.5L21.2 6.4L23.7 6.7L26.3 6.3L28.8 6.9L31.3 5.6L33.9 5.6L36.4 5.8L38.9 5.7L41.4 5.8L44 5.9L46.5 5.8L49 5.9L49 15L46.5 15L44 15L41.4 15L38.9 15L36.4 15L33.9 15L31.3 15L28.8 15L26.3 15L23.7 15L21.2 15L18.7 15L16.1 15L13.6 15L11.1 15L8.6 15L6 15L3.5 15L1 15Z" fill="#29292b" fill-opacity="0.7" class="zr16-cls-66"></path>
+<path d="M1 4.8L3.5 0.9L6 1L8.6 2.7L11.1 3.1L13.6 5.8L16.1 6.2L18.7 6.5L21.2 6.4L23.7 6.7L26.3 6.3L28.8 6.9L31.3 5.6L33.9 5.6L36.4 5.8L38.9 5.7L41.4 5.8L44 5.9L46.5 5.8L49 5.9" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr16-cls-67"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr16-cls-64"></path>
+<defs >
+<clipPath id="zr16-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr16-cls-65"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr16-cls-64:hover {
+pointer-events:none;
+}
+.zr16-cls-65:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr16-cls-66:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr16-cls-67:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-negative"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9660;<!-- HTML_TAG_END --></span> <span>-1.1%</span> <span>vs. Last Week</span></span></span></p></div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">Avg MSRP Premium  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="ZPb-8aAzdT" id="hjAn_Zi3Kf" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">$460 </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 15.5L50 15.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr17-cls-68"></path>
+<g clip-path="url(#zr17-c0)">
+<path d="M1 10.4L3.5 2.4L6 3.9L8.6 7.4L11.1 7.3L13.6 9.5L16.1 9.1L18.7 8.4L21.2 8.5L23.7 8.7L26.3 8.1L28.8 9.1L31.3 7.2L33.9 6.7L36.4 6.6L38.9 5.1L41.4 5.2L44 5.9L46.5 5L49 3.5L49 15L46.5 15L44 15L41.4 15L38.9 15L36.4 15L33.9 15L31.3 15L28.8 15L26.3 15L23.7 15L21.2 15L18.7 15L16.1 15L13.6 15L11.1 15L8.6 15L6 15L3.5 15L1 15Z" fill="#29292b" fill-opacity="0.7" class="zr17-cls-70"></path>
+<path d="M1 10.4L3.5 2.4L6 3.9L8.6 7.4L11.1 7.3L13.6 9.5L16.1 9.1L18.7 8.4L21.2 8.5L23.7 8.7L26.3 8.1L28.8 9.1L31.3 7.2L33.9 6.7L36.4 6.6L38.9 5.1L41.4 5.2L44 5.9L46.5 5L49 3.5" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr17-cls-71"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr17-cls-68"></path>
+<defs >
+<clipPath id="zr17-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr17-cls-69"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr17-cls-68:hover {
+pointer-events:none;
+}
+.zr17-cls-69:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr17-cls-70:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr17-cls-71:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-positive"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9650;<!-- HTML_TAG_END --></span> <span>14.7%</span> <span>vs. Last Week</span></span></span></p></div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">% Listings > Avg Price  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="_6DYI-npMD" id="MdRsc2S3LX" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">49.9% </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 15.5L50 15.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr18-cls-72"></path>
+<g clip-path="url(#zr18-c0)">
+<path d="M1 10.6L3.5 3.1L6 10L8.6 13.4L11.1 12.6L13.6 11.9L16.1 12.3L18.7 10.3L21.2 8.6L23.7 9.3L26.3 8.7L28.8 9.8L31.3 6.4L33.9 7.3L36.4 6.5L38.9 5.4L41.4 4.4L44 4.9L46.5 4.5L49 2.5L49 15L46.5 15L44 15L41.4 15L38.9 15L36.4 15L33.9 15L31.3 15L28.8 15L26.3 15L23.7 15L21.2 15L18.7 15L16.1 15L13.6 15L11.1 15L8.6 15L6 15L3.5 15L1 15Z" fill="#29292b" fill-opacity="0.7" class="zr18-cls-74"></path>
+<path d="M1 10.6L3.5 3.1L6 10L8.6 13.4L11.1 12.6L13.6 11.9L16.1 12.3L18.7 10.3L21.2 8.6L23.7 9.3L26.3 8.7L28.8 9.8L31.3 6.4L33.9 7.3L36.4 6.5L38.9 5.4L41.4 4.4L44 4.9L46.5 4.5L49 2.5" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr18-cls-75"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr18-cls-72"></path>
+<defs >
+<clipPath id="zr18-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr18-cls-73"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr18-cls-72:hover {
+pointer-events:none;
+}
+.zr18-cls-73:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr18-cls-74:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr18-cls-75:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-positive"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9650;<!-- HTML_TAG_END --></span> <span>19.0%</span> <span>vs. Last Week</span></span></span></p></div> <br> <br> <h2 class="markdown" id="msrp-analysis" data-svelte-h="svelte-1sl16yy"><a href="#msrp-analysis">MSRP Analysis</a></h2>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none"># of MSRP Alerts  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="_OYNMushRl" id="UjInKMHdmK" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">97 </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 12.5L50 12.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr19-cls-76"></path>
+<g clip-path="url(#zr19-c0)">
+<path d="M1 12L3.5 12.5L6 11.9L8.6 12.2L11.1 11.9L13.6 9.4L16.1 10.7L18.7 10.6L21.2 8.6L23.7 2.7L26.3 9.1L28.8 2.3L31.3 6.3L33.9 11.9L36.4 11.6L38.9 10.3L41.4 11.3L44 10.7L46.5 10.2L49 10.1L49 12.5L46.5 12.5L44 12.5L41.4 12.5L38.9 12.5L36.4 12.5L33.9 12.5L31.3 12.5L28.8 12.5L26.3 12.5L23.7 12.5L21.2 12.5L18.7 12.5L16.1 12.5L13.6 12.5L11.1 12.5L8.6 12.5L6 12.5L3.5 12.5L1 12.5Z" fill="#29292b" fill-opacity="0.7" class="zr19-cls-78"></path>
+<path d="M1 12L3.5 12.5L6 11.9L8.6 12.2L11.1 11.9L13.6 9.4L16.1 10.7L18.7 10.6L21.2 8.6L23.7 2.7L26.3 9.1L28.8 2.3L31.3 6.3L33.9 11.9L36.4 11.6L38.9 10.3L41.4 11.3L44 10.7L46.5 10.2L49 10.1" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr19-cls-79"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr19-cls-76"></path>
+<defs >
+<clipPath id="zr19-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr19-cls-77"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr19-cls-76:hover {
+pointer-events:none;
+}
+.zr19-cls-77:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr19-cls-78:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr19-cls-79:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-positive"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9650;<!-- HTML_TAG_END --></span> <span>6.6%</span> <span>vs. Last Week</span></span></span></p></div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">MSRP Alert Share  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="ycyCdZWKiv" id="6zkz-NPyH6" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">7.0% </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 12.5L50 12.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr20-cls-80"></path>
+<g clip-path="url(#zr20-c0)">
+<path d="M1 1.5L3.5 12L6 7.3L8.6 10.4L11.1 9L13.6 9.6L16.1 10.9L18.7 11.2L21.2 10.7L23.7 9.3L26.3 10.6L28.8 8L31.3 9.3L33.9 11.6L36.4 11.4L38.9 9.9L41.4 11L44 9.4L46.5 9.1L49 9.9L49 12L46.5 12L44 12L41.4 12L38.9 12L36.4 12L33.9 12L31.3 12L28.8 12L26.3 12L23.7 12L21.2 12L18.7 12L16.1 12L13.6 12L11.1 12L8.6 12L6 12L3.5 12L1 12Z" fill="#29292b" fill-opacity="0.7" class="zr20-cls-82"></path>
+<path d="M1 1.5L3.5 12L6 7.3L8.6 10.4L11.1 9L13.6 9.6L16.1 10.9L18.7 11.2L21.2 10.7L23.7 9.3L26.3 10.6L28.8 8L31.3 9.3L33.9 11.6L36.4 11.4L38.9 9.9L41.4 11L44 9.4L46.5 9.1L49 9.9" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr20-cls-83"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr20-cls-80"></path>
+<defs >
+<clipPath id="zr20-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr20-cls-81"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr20-cls-80:hover {
+pointer-events:none;
+}
+.zr20-cls-81:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr20-cls-82:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr20-cls-83:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-negative"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9660;<!-- HTML_TAG_END --></span> <span>-26.9%</span> <span>vs. Last Week</span></span></span></p></div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">% Listings >20% Above MSRP  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="SyZdiwGfAt" id="_8sRR8Elw7" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">85.8% </span>    <div class="inline-block align-baseline" style="width: 50px; height: 15px;"><!-- HTML_TAG_START --><svg width="50" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 50 15">
+<rect width="50" height="15" x="0" y="0" fill="none"></rect>
+<path d="M0 15.5L50 15.5" fill="none" pointer-events="visible" stroke="#29292b" stroke-width="0.75" stroke-linecap="round" class="zr21-cls-84"></path>
+<g clip-path="url(#zr21-c0)">
+<path d="M1 6.6L3.5 2.1L6 2.3L8.6 3.1L11.1 3L13.6 2.3L16.1 2.3L18.7 2.1L21.2 1.8L23.7 3.1L26.3 2.4L28.8 3.6L31.3 2.2L33.9 2.1L36.4 2.4L38.9 2.1L41.4 2.5L44 4.2L46.5 3.8L49 2.1L49 15L46.5 15L44 15L41.4 15L38.9 15L36.4 15L33.9 15L31.3 15L28.8 15L26.3 15L23.7 15L21.2 15L18.7 15L16.1 15L13.6 15L11.1 15L8.6 15L6 15L3.5 15L1 15Z" fill="#29292b" fill-opacity="0.7" class="zr21-cls-86"></path>
+<path d="M1 6.6L3.5 2.1L6 2.3L8.6 3.1L11.1 3L13.6 2.3L16.1 2.3L18.7 2.1L21.2 1.8L23.7 3.1L26.3 2.4L28.8 3.6L31.3 2.2L33.9 2.1L36.4 2.4L38.9 2.1L41.4 2.5L44 4.2L46.5 3.8L49 2.1" fill="none" pointer-events="visible" stroke="#7b7b7c" stroke-linejoin="bevel" class="zr21-cls-87"></path>
+</g>
+<path d="M-5 -5l10 0l0 10l-10 0Z" transform="translate(5 5)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" class="zr21-cls-84"></path>
+<defs >
+<clipPath id="zr21-c0">
+<path d="M-1 -0.5l52 0l0 16l-52 0Z" fill="#000" class="zr21-cls-85"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr21-cls-84:hover {
+pointer-events:none;
+}
+.zr21-cls-85:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr21-cls-86:hover {
+cursor:pointer;
+fill:rgba(45,45,47,1);
+}
+.zr21-cls-87:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg><!-- HTML_TAG_END --></div></div> <p class="text-xs font-sans mt-1">   <span class="m-0 text-xs font-ui inline-block rounded-md text-positive"><span style="text-align: right;"><span class="font-[system-ui]"><!-- HTML_TAG_START -->&#9650;<!-- HTML_TAG_END --></span> <span>15.0%</span> <span>vs. Last Week</span></span></span></p></div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">Most MSRP'd Model  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="MkTRJNaX50" id="-L1GXYcCTP" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">PNY RTX 5070 Ti Overclocked Triple Fan </span> </div> </div>   <div class="inline-block font-sans pt-2 pb-3 pl-0 mr-3 items-center align-top" style="
+        min-width: 18%;
+        max-width: none;
+		"><p class="text-sm align-top leading-none">Most MSRP'd Card  <a role="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" aria-controls="bZeC5AaoTh" id="jbPlQ8QTNw" data-melt-hover-card-trigger="" data-link-preview-trigger=""><span slot="trigger" class="inline-block align-middle pb-0.5 pr-1 leading-4 w-fit undefined cursor-pointer" role="button" aria-expanded="false" aria-label="Toggle tooltip" tabindex="0" style="--textColor: rgb(123,123,124);"> <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="w-3 h-3 text-(--textColor)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82707 7.49972C1.82707 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82707 10.6327 1.82707 7.49972ZM8.24992 4.49999C8.24992 4.9142 7.91413 5.24999 7.49992 5.24999C7.08571 5.24999 6.74992 4.9142 6.74992 4.49999C6.74992 4.08577 7.08571 3.74999 7.49992 3.74999C7.91413 3.74999 8.24992 4.08577 8.24992 4.49999ZM6.00003 5.99999H6.50003H7.50003C7.77618 5.99999 8.00003 6.22384 8.00003 6.49999V9.99999H8.50003H9.00003V11H8.50003H7.50003H6.50003H6.00003V9.99999H6.50003H7.00003V6.99999H6.50003H6.00003V5.99999Z" fill="currentColor"></path></svg> </span></a> </p> <div class="relative text-xl font-medium mt-1.5">   <span style="color: ">RTX 5070 </span> </div> </div></article></main> <div class="print:hidden"><aside class="hidden lg:block w-48"><div class="fixed w-48 top-20 bottom-20 pl-4 px-3 overflow-auto pretty-scrollbar"></div></aside></div></div></div>  
+			<script type="application/json" data-sveltekit-fetched data-url="/api/customFormattingSettings.json/GET.json">{"status":200,"statusText":"","headers":{},"body":"{\"customFormattingSettings\":{\"version\":\"1.0\",\"customFormats\":[]}}"}</script>
+			<script type="application/json" data-sveltekit-fetched data-url="/api/pagesManifest.json">{"status":200,"statusText":"","headers":{},"body":"{\"label\":\"Home\",\"href\":\"/\",\"children\":{\"1. Overall\":{\"label\":\"1. Overall\",\"children\":{\"summary\":{\"label\":\"summary\",\"href\":\"/1.%20Overall/summary\",\"children\":{},\"isTemplated\":false,\"isPage\":true}},\"frontMatter\":{},\"isTemplated\":false,\"isPage\":false},\"2. Drilldowns\":{\"label\":\"2. Drilldowns\",\"children\":{\"AIB\":{\"label\":\"AIB\",\"href\":\"/2.%20Drilldowns/AIB\",\"children\":{},\"isTemplated\":false,\"isPage\":true},\"All-GPUs\":{\"label\":\"All GPUs\",\"href\":\"/2.%20Drilldowns/All-GPUs\",\"children\":{},\"isTemplated\":false,\"isPage\":true},\"Nvidia-AMD\":{\"label\":\"Nvidia AMD\",\"href\":\"/2.%20Drilldowns/Nvidia-AMD\",\"children\":{},\"isTemplated\":false,\"isPage\":true},\"Retailer\":{\"label\":\"Retailer\",\"href\":\"/2.%20Drilldowns/Retailer\",\"children\":{},\"isTemplated\":false,\"isPage\":true}},\"frontMatter\":{},\"isTemplated\":false,\"isPage\":false}},\"isTemplated\":false,\"isPage\":true}"}</script>
+			<script type="application/json" data-sveltekit-fetched data-url="/api//1.%20Overall/summary/evidencemeta.json">{"status":200,"statusText":"","headers":{},"body":"{\"queries\":[{\"id\":\"wow_listings\",\"compiledQueryString\":\"-- wow_listings\\n\\n-- Step 0: Calculate daily average of unique prices per GPU_Name\\nWITH daily_gpu_name_unique_price_avg AS (\\n  SELECT\\n    DATE_TRUNC('day', MessageDateTime) AS SaleDate,\\n    \\\"GPU_Name\\\",\\n    AVG(Price) AS AvgOfUniquePrices -- This AVG is over distinct prices for this GPU_Name on this SaleDate\\n  FROM (\\n    SELECT DISTINCT\\n        DATE_TRUNC('day', MessageDateTime) AS SaleDate_inner, -- Renamed to avoid ambiguity in some DBs\\n        MessageDateTime, -- Keep original for joining later if needed, or for week calculation\\n        \\\"GPU_Name\\\",\\n        Price\\n    FROM gpu_data.gpu\\n    WHERE \\\"GPU_Name\\\" IN ('RTX 5080', 'RTX 5070', 'RTX 5070 Ti', 'RTX 5090', 'RX 9070', 'RX 9070 XT')\\n      AND Price IS NOT NULL AND Price > 0 -- Ensure we only consider valid, positive prices\\n  ) distinct_prices_per_day_gpu_name\\n  GROUP BY 1, 2 -- Group by SaleDate, \\\"GPU_Name\\\"\\n),\\n\\n-- Step 1: Combine base tables and add listing_type\\nlistings_base AS (\\n  SELECT\\n    MessageDateTime, MessageID, \\\"GPU_Name\\\", GPU_Model, Price, MSRP, AIB,\\n    'regular' AS listing_type\\n  FROM gpu_data.gpu\\n  WHERE \\\"GPU_Name\\\" IN ('RTX 5080', 'RTX 5070', 'RTX 5070 Ti', 'RTX 5090', 'RX 9070', 'RX 9070 XT')\\n  -- Note: Price filtering for calculations will happen in later CTEs where averages are computed\\n),\\n\\n-- Step 2: Enrich listings with common calculations and time gap\\nlistings_enriched AS (\\n  SELECT\\n    lb.*,\\n    DATE_TRUNC('week', lb.MessageDateTime) AS week,\\n    DATE_TRUNC('day', lb.MessageDateTime) AS SaleDate, -- Add SaleDate for joining\\n    EXTRACT(DOW FROM lb.MessageDateTime) AS day_of_week,\\n    CASE WHEN EXTRACT(DOW FROM lb.MessageDateTime) IN (0, 6) THEN 'weekend' ELSE 'weekday' END AS day_type,\\n    CASE\\n      WHEN lb.\\\"GPU_Name\\\" LIKE 'RTX%' THEN 'NVIDIA'\\n      WHEN lb.\\\"GPU_Name\\\" LIKE 'RX%' THEN 'AMD'\\n      ELSE 'Other'\\n    END AS manufacturer,\\n    (lb.Price - lb.MSRP \u003C 5 AND lb.MSRP IS NOT NULL AND lb.Price IS NOT NULL AND lb.Price > 0) AS is_msrp,\\n    (lb.Price > lb.MSRP * 1.20 AND lb.MSRP IS NOT NULL AND lb.Price IS NOT NULL AND lb.Price > 0) AS is_over_20pct_msrp,\\n    (lb.Price - lb.MSRP) AS msrp_delta,\\n    EXTRACT(EPOCH FROM (lb.MessageDateTime - LAG(lb.MessageDateTime) OVER (PARTITION BY DATE_TRUNC('week', lb.MessageDateTime), lb.\\\"GPU_Name\\\" ORDER BY lb.MessageDateTime))) / 60.0 AS minutes_since_prev -- Partition by GPU_Name too? For per-GPU listing frequency. Or overall as before.\\n  FROM listings_base lb\\n),\\n\\n-- Step 3: Calculate weekly average prices (THIS IS THE MAIN CHANGE FOR AVG PRICE)\\n-- This CTE will now average the daily unique GPU_Name averages.\\nweekly_avg_prices AS (\\n  SELECT\\n    DATE_TRUNC('week', dgnupa.SaleDate) AS week,\\n    AVG(dgnupa.AvgOfUniquePrices) as reg_avg_price_for_calc -- Average of daily averages of unique prices per GPU_Name\\n  FROM daily_gpu_name_unique_price_avg dgnupa\\n  GROUP BY 1\\n),\\n\\n-- Step 4: Add flags indicating if a listing's PRICE is above the new weekly average\\n-- The comparison here is tricky. The weekly_avg_price is an average of daily averages.\\n-- Comparing an individual listing's price to this requires careful thought.\\n-- For now, I'll keep the structure, but the meaning of 'reg_is_above_avg' changes.\\n-- It means: is this specific listing's price higher than the weekly average of (daily averages of unique prices per GPU_Name)?\\nlistings_with_avg_comparison AS (\\n  SELECT\\n    l.*,\\n    wap.reg_avg_price_for_calc,\\n    (l.Price > wap.reg_avg_price_for_calc AND l.Price IS NOT NULL AND l.Price > 0) as reg_is_above_avg\\n  FROM listings_enriched l\\n  LEFT JOIN weekly_avg_prices wap ON l.week = wap.week\\n),\\n\\n-- Step 5: Aggregate weekly base statistics using conditional aggregation\\nweekly_stats AS (\\n  SELECT\\n    coalesce(lew.week, wap_main.week) as week, -- Use coalesce if listings_enriched might be empty for a week but daily_gpu_name_unique_price_avg has data\\n        \\n        -- Counts of listings (unaffected by price filters, taken from listings_enriched)\\n        COUNT_IF(lew.listing_type = 'regular') AS reg_num_listings,\\n        COUNT_IF(lew.listing_type = 'regular' AND lew.day_type = 'weekday') AS reg_weekday_listings,\\n        COUNT_IF(lew.listing_type = 'regular' AND lew.manufacturer = 'NVIDIA') AS reg_nvidia_listings,\\n        COUNT_IF(lew.listing_type = 'regular' AND lew.manufacturer = 'AMD') AS reg_amd_listings,\\n        \\n        COUNT_IF(lew.listing_type = 'regular' AND lew.Price IS NOT NULL AND lew.Price > 0) AS reg_num_listings_with_valid_price,\\n\\n        -- Pricing aggregates\\n        -- reg_avg_price is now sourced from the new weekly_avg_prices CTE (which itself is an avg of daily avgs)\\n        MAX(wap_main.reg_avg_price_for_calc) AS reg_avg_price, -- MAX because wap_main is grouped by week\\n        \\n        -- reg_listed_volume should still sum actual prices of listings\\n        SUM(CASE WHEN lew.listing_type = 'regular' AND lew.Price IS NOT NULL AND lew.Price > 0 THEN lew.Price END) AS reg_listed_volume,\\n        \\n        -- reg_avg_msrp_delta: this should average the deltas from actual listings\\n        AVG(CASE WHEN lew.listing_type = 'regular' AND lew.Price IS NOT NULL AND lew.Price > 0 THEN lew.msrp_delta END) FILTER (WHERE lew.MSRP IS NOT NULL) AS reg_avg_msrp_delta,\\n        \\n        COUNT_IF(lew.listing_type = 'regular' AND lew.is_msrp) AS reg_num_msrp_listings,\\n        COUNT_IF(lew.listing_type = 'regular' AND lew.is_over_20pct_msrp) AS reg_num_over_20pct_msrp,\\n        \\n        AVG(CASE WHEN lew.listing_type = 'regular' THEN lew.minutes_since_prev END) AS reg_avg_minutes_between_listings,\\n        \\n        COUNT_IF(lew.listing_type = 'regular' AND lew.reg_is_above_avg) AS reg_num_above_avg_price,\\n        \\n        COUNT_IF(lew.listing_type = 'regular' AND lew.MSRP IS NOT NULL AND lew.Price IS NOT NULL AND lew.Price > 0) AS reg_total_with_msrp \\n\\n    FROM listings_with_avg_comparison lew\\n    -- FULL JOIN with weekly_avg_prices to ensure weeks with only price data (no listings after filtering) are included for reg_avg_price\\n    FULL JOIN weekly_avg_prices wap_main ON lew.week = wap_main.week\\n    GROUP BY 1 -- Group by week\\n),\\n\\n-- Step 6: Calculate derived weekly metrics (percentages, ratios)\\n-- This CTE should largely remain the same, as it operates on the outputs of weekly_stats\\nweekly_stats_derived AS (\\n    SELECT\\n        *,\\n        reg_num_listings / 7.0 AS reg_daily_new_listings,\\n        COALESCE(reg_weekday_listings * 1.0 / NULLIF(reg_num_listings, 0), 0) AS reg_weekday_listing_pct,\\n        COALESCE(reg_nvidia_listings * 1.0 / NULLIF(reg_amd_listings, 0), NULL) AS reg_nvidia_amd_ratio,\\n        COALESCE(reg_num_msrp_listings * 1.0 / NULLIF(reg_total_with_msrp, 0), 0) AS reg_msrp_listings_pct,\\n        COALESCE(reg_num_over_20pct_msrp * 1.0 / NULLIF(reg_total_with_msrp, 0), 0) AS reg_pct_over_20pct_msrp,\\n        COALESCE(reg_num_above_avg_price * 1.0 / NULLIF(reg_num_listings_with_valid_price, 0), 0) AS reg_pct_above_avg_price\\n    FROM weekly_stats ws\\n),\\n\\n-- Step 7a: Rank top cards/models for 'regular' listings (Unaffected by price filters)\\nreg_top_cards_ranked AS (\\n  SELECT\\n    week,\\n    \\\"GPU_Name\\\",\\n    COUNT(*) as cnt,\\n    RANK() OVER (PARTITION BY week ORDER BY COUNT(*) DESC, \\\"GPU_Name\\\") as rk\\n  FROM listings_enriched -- Counts all listings from enriched base\\n  WHERE listing_type = 'regular'\\n  GROUP BY week, \\\"GPU_Name\\\"\\n),\\nreg_top_models_ranked AS (\\n  SELECT\\n    week,\\n    GPU_Model,\\n    COUNT(*) as cnt,\\n    RANK() OVER (PARTITION BY week ORDER BY COUNT(*) DESC, GPU_Model) as rk\\n  FROM listings_enriched -- Counts all listings from enriched base\\n  WHERE listing_type = 'regular' AND GPU_Model IS NOT NULL\\n  GROUP BY week, GPU_Model\\n),\\n\\n-- Step 7c: Calculate base MSRP stats per item/level for ranking\\nmsrp_stats_base AS (\\n  SELECT\\n    week, AIB, GPU_Model, \\\"GPU_Name\\\",\\n    COUNT(*) AS num_msrp_listings\\n  FROM listings_enriched\\n  WHERE is_msrp AND listing_type = 'regular'\\n  GROUP BY week, AIB, GPU_Model, \\\"GPU_Name\\\"\\n),\\nmsrp_total_counts AS (\\n  SELECT\\n    week, AIB, GPU_Model, \\\"GPU_Name\\\",\\n    COUNT(*) as total_listings\\n  FROM listings_enriched\\n  WHERE MSRP IS NOT NULL AND listing_type = 'regular' AND Price IS NOT NULL AND Price > 0\\n  GROUP BY week, AIB, GPU_Model, \\\"GPU_Name\\\"\\n),\\nmsrp_stats_agg AS (\\n  SELECT\\n    tc.week, 'model' as level, tc.GPU_Model as item,\\n    SUM(COALESCE(msb.num_msrp_listings, 0)) AS num_msrp_listings,\\n    SUM(tc.total_listings) AS total_listings\\n  FROM msrp_total_counts tc\\n  LEFT JOIN msrp_stats_base msb ON tc.week = msb.week AND tc.GPU_Model = msb.GPU_Model AND tc.AIB = msb.AIB AND tc.\\\"GPU_Name\\\" = msb.\\\"GPU_Name\\\"\\n  WHERE tc.GPU_Model IS NOT NULL\\n  GROUP BY tc.week, tc.GPU_Model\\n  UNION ALL\\n  SELECT\\n    tc.week, 'card' as level, tc.\\\"GPU_Name\\\" as item,\\n    SUM(COALESCE(msb.num_msrp_listings, 0)) AS num_msrp_listings,\\n    SUM(tc.total_listings) AS total_listings\\n  FROM msrp_total_counts tc\\n  LEFT JOIN msrp_stats_base msb ON tc.week = msb.week AND tc.GPU_Model = msb.GPU_Model AND tc.AIB = msb.AIB AND tc.\\\"GPU_Name\\\" = msb.\\\"GPU_Name\\\"\\n  GROUP BY tc.week, tc.\\\"GPU_Name\\\"\\n),\\n\\n-- Step 7d: Rank REGULAR MSRP items by percentage\\nmsrp_ranked AS (\\n  SELECT\\n    week, level, item, total_listings,\\n    COALESCE(num_msrp_listings * 1.0 / NULLIF(total_listings, 0), 0) AS msrp_pct,\\n    RANK() OVER (PARTITION BY week, level ORDER BY COALESCE(num_msrp_listings * 1.0 / NULLIF(total_listings, 0), 0) DESC, total_listings DESC, item) as rk\\n  FROM msrp_stats_agg\\n  WHERE total_listings > 0 \\n),\\n\\n-- Step 8a: Select top cards/models per week\\ntop_cards_models AS (\\n    SELECT week, MAX(CASE WHEN rk=1 THEN \\\"GPU_Name\\\" END) as reg_top_gpu_card\\n    FROM reg_top_cards_ranked WHERE rk = 1 GROUP BY week\\n),\\ntop_models AS (\\n     SELECT week, MAX(CASE WHEN rk=1 THEN GPU_Model END) as reg_top_gpu_model\\n    FROM reg_top_models_ranked WHERE rk = 1 GROUP BY week\\n),\\n\\n-- Step 8b: Select top MSRP'd items per week\\nmost_msrpd AS (\\n  SELECT week,\\n    MAX(CASE WHEN level = 'model' AND rk = 1 THEN item END) AS reg_most_msrpd_model,\\n    MAX(CASE WHEN level = 'card' AND rk = 1 THEN item END) AS reg_most_msrpd_card\\n  FROM msrp_ranked\\n  WHERE rk = 1\\n  GROUP BY week\\n),\\n\\n-- Step 9: Add lagged values for WoW calculation\\nweekly_data_with_lag AS (\\n  SELECT\\n        *,\\n        LAG(reg_num_listings, 1) OVER w AS reg_last_week_listing,\\n        LAG(reg_weekday_listing_pct, 1) OVER w AS reg_last_weekday_listing_pct,\\n        LAG(reg_nvidia_amd_ratio, 1) OVER w AS reg_last_nvidia_amd_ratio,\\n        LAG(reg_avg_price, 1) OVER w AS reg_last_week_avg_price,             -- Uses new avg price\\n        LAG(reg_pct_above_avg_price, 1) OVER w AS reg_last_pct_above_avg_price, -- Uses new comparison\\n        LAG(reg_avg_msrp_delta, 1) OVER w AS reg_last_week_avg_msrp_delta,\\n        LAG(reg_num_msrp_listings, 1) OVER w AS reg_last_week_num_msrp_listings,\\n        LAG(reg_msrp_listings_pct, 1) OVER w AS reg_last_week_msrp_listings_pct,\\n        LAG(reg_pct_over_20pct_msrp, 1) OVER w AS reg_last_pct_over_20pct_msrp,\\n        LAG(reg_daily_new_listings, 1) OVER w AS reg_last_week_daily_new_listings,\\n        LAG(reg_avg_minutes_between_listings, 1) OVER w AS reg_last_week_avg_minutes_between_listings\\n    FROM weekly_stats_derived\\n    WINDOW w AS (ORDER BY week ASC)\\n)\\n\\n-- Step 10: Final SELECT with WoW calculations and joins (mostly unchanged structurally)\\nSELECT\\n    wdl.week,\\n    wdl.reg_num_listings AS reg_current_week_listings,\\n    wdl.reg_last_week_listing,\\n    (wdl.reg_num_listings / NULLIF(wdl.reg_last_week_listing, 0)) - 1 AS reg_wow_pct_listing,\\n    wdl.reg_weekday_listing_pct AS reg_current_weekday_listing_pct,\\n    wdl.reg_last_weekday_listing_pct,\\n    (wdl.reg_weekday_listing_pct / NULLIF(wdl.reg_last_weekday_listing_pct, 0)) - 1 AS reg_wow_weekday_pct,\\n    wdl.reg_nvidia_amd_ratio AS reg_current_nvidia_amd_ratio,\\n    wdl.reg_last_nvidia_amd_ratio,\\n    (wdl.reg_nvidia_amd_ratio / NULLIF(wdl.reg_last_nvidia_amd_ratio, 0)) - 1 AS reg_wow_pct_nvidia_amd_ratio,\\n    \\n    -- These use the new reg_avg_price calculation\\n    wdl.reg_avg_price AS reg_current_week_avg_price,\\n    wdl.reg_last_week_avg_price,\\n    (wdl.reg_avg_price / NULLIF(wdl.reg_last_week_avg_price, 0)) - 1 AS reg_wow_pct_avg_price,\\n    \\n    wdl.reg_pct_above_avg_price AS reg_current_pct_above_avg_price,\\n    wdl.reg_last_pct_above_avg_price,\\n    (wdl.reg_pct_above_avg_price / NULLIF(wdl.reg_last_pct_above_avg_price, 0)) - 1 AS reg_wow_pct_above_avg_price,\\n\\n    wdl.reg_avg_msrp_delta AS reg_current_week_avg_msrp_delta,\\n    wdl.reg_last_week_avg_msrp_delta,\\n    CASE WHEN wdl.reg_last_week_avg_msrp_delta IS NULL OR ABS(wdl.reg_last_week_avg_msrp_delta) \u003C 0.01 THEN NULL ELSE (wdl.reg_avg_msrp_delta - wdl.reg_last_week_avg_msrp_delta) / ABS(wdl.reg_last_week_avg_msrp_delta) END AS reg_wow_pct_avg_msrp_delta,\\n    wdl.reg_num_msrp_listings AS reg_current_week_num_msrp_listings,\\n    wdl.reg_last_week_num_msrp_listings,\\n    (wdl.reg_num_msrp_listings / NULLIF(wdl.reg_last_week_num_msrp_listings, 0)) - 1 AS reg_wow_pct_num_msrp_listings,\\n    wdl.reg_msrp_listings_pct AS reg_current_week_msrp_listings_pct,\\n    wdl.reg_last_week_msrp_listings_pct,\\n    (wdl.reg_msrp_listings_pct / NULLIF(wdl.reg_last_week_msrp_listings_pct, 0)) - 1 AS reg_wow_msrp_listings_pct,\\n    wdl.reg_pct_over_20pct_msrp AS reg_current_pct_over_20pct_msrp,\\n    wdl.reg_last_pct_over_20pct_msrp,\\n    (wdl.reg_pct_over_20pct_msrp / NULLIF(wdl.reg_last_pct_over_20pct_msrp, 0)) - 1 AS reg_wow_pct_over_20pct_msrp,\\n    wdl.reg_daily_new_listings AS reg_current_week_daily_new_listings,\\n    wdl.reg_last_week_daily_new_listings,\\n    (wdl.reg_daily_new_listings / NULLIF(wdl.reg_last_week_daily_new_listings, 0)) - 1 AS reg_wow_daily_new_listings,\\n    wdl.reg_avg_minutes_between_listings AS reg_current_week_avg_minutes_between_listings,\\n    wdl.reg_last_week_avg_minutes_between_listings,\\n    (wdl.reg_last_week_avg_minutes_between_listings / NULLIF(wdl.reg_avg_minutes_between_listings, 0)) - 1 AS reg_wow_pct_time_between_listings,\\n    COALESCE(tcm.reg_top_gpu_card, 'N/A') AS reg_top_gpu_card,\\n    COALESCE(tm.reg_top_gpu_model, 'N/A') AS reg_top_gpu_model,\\n    COALESCE(mm.reg_most_msrpd_model, 'N/A') as reg_most_msrpd_model,\\n    COALESCE(mm.reg_most_msrpd_card, 'N/A') as reg_most_msrpd_card\\nFROM weekly_data_with_lag wdl\\nLEFT JOIN top_cards_models tcm ON wdl.week = tcm.week\\nLEFT JOIN top_models tm ON wdl.week = tm.week\\nLEFT JOIN most_msrpd mm ON wdl.week = mm.week\\nORDER BY wdl.week DESC;\",\"inputQueryString\":\"-- wow_listings\\n\\n-- Step 0: Calculate daily average of unique prices per GPU_Name\\nWITH daily_gpu_name_unique_price_avg AS (\\n  SELECT\\n    DATE_TRUNC('day', MessageDateTime) AS SaleDate,\\n    \\\"GPU_Name\\\",\\n    AVG(Price) AS AvgOfUniquePrices -- This AVG is over distinct prices for this GPU_Name on this SaleDate\\n  FROM (\\n    SELECT DISTINCT\\n        DATE_TRUNC('day', MessageDateTime) AS SaleDate_inner, -- Renamed to avoid ambiguity in some DBs\\n        MessageDateTime, -- Keep original for joining later if needed, or for week calculation\\n        \\\"GPU_Name\\\",\\n        Price\\n    FROM gpu_data.gpu\\n    WHERE \\\"GPU_Name\\\" IN ('RTX 5080', 'RTX 5070', 'RTX 5070 Ti', 'RTX 5090', 'RX 9070', 'RX 9070 XT')\\n      AND Price IS NOT NULL AND Price > 0 -- Ensure we only consider valid, positive prices\\n  ) distinct_prices_per_day_gpu_name\\n  GROUP BY 1, 2 -- Group by SaleDate, \\\"GPU_Name\\\"\\n),\\n\\n-- Step 1: Combine base tables and add listing_type\\nlistings_base AS (\\n  SELECT\\n    MessageDateTime, MessageID, \\\"GPU_Name\\\", GPU_Model, Price, MSRP, AIB,\\n    'regular' AS listing_type\\n  FROM gpu_data.gpu\\n  WHERE \\\"GPU_Name\\\" IN ('RTX 5080', 'RTX 5070', 'RTX 5070 Ti', 'RTX 5090', 'RX 9070', 'RX 9070 XT')\\n  -- Note: Price filtering for calculations will happen in later CTEs where averages are computed\\n),\\n\\n-- Step 2: Enrich listings with common calculations and time gap\\nlistings_enriched AS (\\n  SELECT\\n    lb.*,\\n    DATE_TRUNC('week', lb.MessageDateTime) AS week,\\n    DATE_TRUNC('day', lb.MessageDateTime) AS SaleDate, -- Add SaleDate for joining\\n    EXTRACT(DOW FROM lb.MessageDateTime) AS day_of_week,\\n    CASE WHEN EXTRACT(DOW FROM lb.MessageDateTime) IN (0, 6) THEN 'weekend' ELSE 'weekday' END AS day_type,\\n    CASE\\n      WHEN lb.\\\"GPU_Name\\\" LIKE 'RTX%' THEN 'NVIDIA'\\n      WHEN lb.\\\"GPU_Name\\\" LIKE 'RX%' THEN 'AMD'\\n      ELSE 'Other'\\n    END AS manufacturer,\\n    (lb.Price - lb.MSRP \u003C 5 AND lb.MSRP IS NOT NULL AND lb.Price IS NOT NULL AND lb.Price > 0) AS is_msrp,\\n    (lb.Price > lb.MSRP * 1.20 AND lb.MSRP IS NOT NULL AND lb.Price IS NOT NULL AND lb.Price > 0) AS is_over_20pct_msrp,\\n    (lb.Price - lb.MSRP) AS msrp_delta,\\n    EXTRACT(EPOCH FROM (lb.MessageDateTime - LAG(lb.MessageDateTime) OVER (PARTITION BY DATE_TRUNC('week', lb.MessageDateTime), lb.\\\"GPU_Name\\\" ORDER BY lb.MessageDateTime))) / 60.0 AS minutes_since_prev -- Partition by GPU_Name too? For per-GPU listing frequency. Or overall as before.\\n  FROM listings_base lb\\n),\\n\\n-- Step 3: Calculate weekly average prices (THIS IS THE MAIN CHANGE FOR AVG PRICE)\\n-- This CTE will now average the daily unique GPU_Name averages.\\nweekly_avg_prices AS (\\n  SELECT\\n    DATE_TRUNC('week', dgnupa.SaleDate) AS week,\\n    AVG(dgnupa.AvgOfUniquePrices) as reg_avg_price_for_calc -- Average of daily averages of unique prices per GPU_Name\\n  FROM daily_gpu_name_unique_price_avg dgnupa\\n  GROUP BY 1\\n),\\n\\n-- Step 4: Add flags indicating if a listing's PRICE is above the new weekly average\\n-- The comparison here is tricky. The weekly_avg_price is an average of daily averages.\\n-- Comparing an individual listing's price to this requires careful thought.\\n-- For now, I'll keep the structure, but the meaning of 'reg_is_above_avg' changes.\\n-- It means: is this specific listing's price higher than the weekly average of (daily averages of unique prices per GPU_Name)?\\nlistings_with_avg_comparison AS (\\n  SELECT\\n    l.*,\\n    wap.reg_avg_price_for_calc,\\n    (l.Price > wap.reg_avg_price_for_calc AND l.Price IS NOT NULL AND l.Price > 0) as reg_is_above_avg\\n  FROM listings_enriched l\\n  LEFT JOIN weekly_avg_prices wap ON l.week = wap.week\\n),\\n\\n-- Step 5: Aggregate weekly base statistics using conditional aggregation\\nweekly_stats AS (\\n  SELECT\\n    coalesce(lew.week, wap_main.week) as week, -- Use coalesce if listings_enriched might be empty for a week but daily_gpu_name_unique_price_avg has data\\n        \\n        -- Counts of listings (unaffected by price filters, taken from listings_enriched)\\n        COUNT_IF(lew.listing_type = 'regular') AS reg_num_listings,\\n        COUNT_IF(lew.listing_type = 'regular' AND lew.day_type = 'weekday') AS reg_weekday_listings,\\n        COUNT_IF(lew.listing_type = 'regular' AND lew.manufacturer = 'NVIDIA') AS reg_nvidia_listings,\\n        COUNT_IF(lew.listing_type = 'regular' AND lew.manufacturer = 'AMD') AS reg_amd_listings,\\n        \\n        COUNT_IF(lew.listing_type = 'regular' AND lew.Price IS NOT NULL AND lew.Price > 0) AS reg_num_listings_with_valid_price,\\n\\n        -- Pricing aggregates\\n        -- reg_avg_price is now sourced from the new weekly_avg_prices CTE (which itself is an avg of daily avgs)\\n        MAX(wap_main.reg_avg_price_for_calc) AS reg_avg_price, -- MAX because wap_main is grouped by week\\n        \\n        -- reg_listed_volume should still sum actual prices of listings\\n        SUM(CASE WHEN lew.listing_type = 'regular' AND lew.Price IS NOT NULL AND lew.Price > 0 THEN lew.Price END) AS reg_listed_volume,\\n        \\n        -- reg_avg_msrp_delta: this should average the deltas from actual listings\\n        AVG(CASE WHEN lew.listing_type = 'regular' AND lew.Price IS NOT NULL AND lew.Price > 0 THEN lew.msrp_delta END) FILTER (WHERE lew.MSRP IS NOT NULL) AS reg_avg_msrp_delta,\\n        \\n        COUNT_IF(lew.listing_type = 'regular' AND lew.is_msrp) AS reg_num_msrp_listings,\\n        COUNT_IF(lew.listing_type = 'regular' AND lew.is_over_20pct_msrp) AS reg_num_over_20pct_msrp,\\n        \\n        AVG(CASE WHEN lew.listing_type = 'regular' THEN lew.minutes_since_prev END) AS reg_avg_minutes_between_listings,\\n        \\n        COUNT_IF(lew.listing_type = 'regular' AND lew.reg_is_above_avg) AS reg_num_above_avg_price,\\n        \\n        COUNT_IF(lew.listing_type = 'regular' AND lew.MSRP IS NOT NULL AND lew.Price IS NOT NULL AND lew.Price > 0) AS reg_total_with_msrp \\n\\n    FROM listings_with_avg_comparison lew\\n    -- FULL JOIN with weekly_avg_prices to ensure weeks with only price data (no listings after filtering) are included for reg_avg_price\\n    FULL JOIN weekly_avg_prices wap_main ON lew.week = wap_main.week\\n    GROUP BY 1 -- Group by week\\n),\\n\\n-- Step 6: Calculate derived weekly metrics (percentages, ratios)\\n-- This CTE should largely remain the same, as it operates on the outputs of weekly_stats\\nweekly_stats_derived AS (\\n    SELECT\\n        *,\\n        reg_num_listings / 7.0 AS reg_daily_new_listings,\\n        COALESCE(reg_weekday_listings * 1.0 / NULLIF(reg_num_listings, 0), 0) AS reg_weekday_listing_pct,\\n        COALESCE(reg_nvidia_listings * 1.0 / NULLIF(reg_amd_listings, 0), NULL) AS reg_nvidia_amd_ratio,\\n        COALESCE(reg_num_msrp_listings * 1.0 / NULLIF(reg_total_with_msrp, 0), 0) AS reg_msrp_listings_pct,\\n        COALESCE(reg_num_over_20pct_msrp * 1.0 / NULLIF(reg_total_with_msrp, 0), 0) AS reg_pct_over_20pct_msrp,\\n        COALESCE(reg_num_above_avg_price * 1.0 / NULLIF(reg_num_listings_with_valid_price, 0), 0) AS reg_pct_above_avg_price\\n    FROM weekly_stats ws\\n),\\n\\n-- Step 7a: Rank top cards/models for 'regular' listings (Unaffected by price filters)\\nreg_top_cards_ranked AS (\\n  SELECT\\n    week,\\n    \\\"GPU_Name\\\",\\n    COUNT(*) as cnt,\\n    RANK() OVER (PARTITION BY week ORDER BY COUNT(*) DESC, \\\"GPU_Name\\\") as rk\\n  FROM listings_enriched -- Counts all listings from enriched base\\n  WHERE listing_type = 'regular'\\n  GROUP BY week, \\\"GPU_Name\\\"\\n),\\nreg_top_models_ranked AS (\\n  SELECT\\n    week,\\n    GPU_Model,\\n    COUNT(*) as cnt,\\n    RANK() OVER (PARTITION BY week ORDER BY COUNT(*) DESC, GPU_Model) as rk\\n  FROM listings_enriched -- Counts all listings from enriched base\\n  WHERE listing_type = 'regular' AND GPU_Model IS NOT NULL\\n  GROUP BY week, GPU_Model\\n),\\n\\n-- Step 7c: Calculate base MSRP stats per item/level for ranking\\nmsrp_stats_base AS (\\n  SELECT\\n    week, AIB, GPU_Model, \\\"GPU_Name\\\",\\n    COUNT(*) AS num_msrp_listings\\n  FROM listings_enriched\\n  WHERE is_msrp AND listing_type = 'regular'\\n  GROUP BY week, AIB, GPU_Model, \\\"GPU_Name\\\"\\n),\\nmsrp_total_counts AS (\\n  SELECT\\n    week, AIB, GPU_Model, \\\"GPU_Name\\\",\\n    COUNT(*) as total_listings\\n  FROM listings_enriched\\n  WHERE MSRP IS NOT NULL AND listing_type = 'regular' AND Price IS NOT NULL AND Price > 0\\n  GROUP BY week, AIB, GPU_Model, \\\"GPU_Name\\\"\\n),\\nmsrp_stats_agg AS (\\n  SELECT\\n    tc.week, 'model' as level, tc.GPU_Model as item,\\n    SUM(COALESCE(msb.num_msrp_listings, 0)) AS num_msrp_listings,\\n    SUM(tc.total_listings) AS total_listings\\n  FROM msrp_total_counts tc\\n  LEFT JOIN msrp_stats_base msb ON tc.week = msb.week AND tc.GPU_Model = msb.GPU_Model AND tc.AIB = msb.AIB AND tc.\\\"GPU_Name\\\" = msb.\\\"GPU_Name\\\"\\n  WHERE tc.GPU_Model IS NOT NULL\\n  GROUP BY tc.week, tc.GPU_Model\\n  UNION ALL\\n  SELECT\\n    tc.week, 'card' as level, tc.\\\"GPU_Name\\\" as item,\\n    SUM(COALESCE(msb.num_msrp_listings, 0)) AS num_msrp_listings,\\n    SUM(tc.total_listings) AS total_listings\\n  FROM msrp_total_counts tc\\n  LEFT JOIN msrp_stats_base msb ON tc.week = msb.week AND tc.GPU_Model = msb.GPU_Model AND tc.AIB = msb.AIB AND tc.\\\"GPU_Name\\\" = msb.\\\"GPU_Name\\\"\\n  GROUP BY tc.week, tc.\\\"GPU_Name\\\"\\n),\\n\\n-- Step 7d: Rank REGULAR MSRP items by percentage\\nmsrp_ranked AS (\\n  SELECT\\n    week, level, item, total_listings,\\n    COALESCE(num_msrp_listings * 1.0 / NULLIF(total_listings, 0), 0) AS msrp_pct,\\n    RANK() OVER (PARTITION BY week, level ORDER BY COALESCE(num_msrp_listings * 1.0 / NULLIF(total_listings, 0), 0) DESC, total_listings DESC, item) as rk\\n  FROM msrp_stats_agg\\n  WHERE total_listings > 0 \\n),\\n\\n-- Step 8a: Select top cards/models per week\\ntop_cards_models AS (\\n    SELECT week, MAX(CASE WHEN rk=1 THEN \\\"GPU_Name\\\" END) as reg_top_gpu_card\\n    FROM reg_top_cards_ranked WHERE rk = 1 GROUP BY week\\n),\\ntop_models AS (\\n     SELECT week, MAX(CASE WHEN rk=1 THEN GPU_Model END) as reg_top_gpu_model\\n    FROM reg_top_models_ranked WHERE rk = 1 GROUP BY week\\n),\\n\\n-- Step 8b: Select top MSRP'd items per week\\nmost_msrpd AS (\\n  SELECT week,\\n    MAX(CASE WHEN level = 'model' AND rk = 1 THEN item END) AS reg_most_msrpd_model,\\n    MAX(CASE WHEN level = 'card' AND rk = 1 THEN item END) AS reg_most_msrpd_card\\n  FROM msrp_ranked\\n  WHERE rk = 1\\n  GROUP BY week\\n),\\n\\n-- Step 9: Add lagged values for WoW calculation\\nweekly_data_with_lag AS (\\n  SELECT\\n        *,\\n        LAG(reg_num_listings, 1) OVER w AS reg_last_week_listing,\\n        LAG(reg_weekday_listing_pct, 1) OVER w AS reg_last_weekday_listing_pct,\\n        LAG(reg_nvidia_amd_ratio, 1) OVER w AS reg_last_nvidia_amd_ratio,\\n        LAG(reg_avg_price, 1) OVER w AS reg_last_week_avg_price,             -- Uses new avg price\\n        LAG(reg_pct_above_avg_price, 1) OVER w AS reg_last_pct_above_avg_price, -- Uses new comparison\\n        LAG(reg_avg_msrp_delta, 1) OVER w AS reg_last_week_avg_msrp_delta,\\n        LAG(reg_num_msrp_listings, 1) OVER w AS reg_last_week_num_msrp_listings,\\n        LAG(reg_msrp_listings_pct, 1) OVER w AS reg_last_week_msrp_listings_pct,\\n        LAG(reg_pct_over_20pct_msrp, 1) OVER w AS reg_last_pct_over_20pct_msrp,\\n        LAG(reg_daily_new_listings, 1) OVER w AS reg_last_week_daily_new_listings,\\n        LAG(reg_avg_minutes_between_listings, 1) OVER w AS reg_last_week_avg_minutes_between_listings\\n    FROM weekly_stats_derived\\n    WINDOW w AS (ORDER BY week ASC)\\n)\\n\\n-- Step 10: Final SELECT with WoW calculations and joins (mostly unchanged structurally)\\nSELECT\\n    wdl.week,\\n    wdl.reg_num_listings AS reg_current_week_listings,\\n    wdl.reg_last_week_listing,\\n    (wdl.reg_num_listings / NULLIF(wdl.reg_last_week_listing, 0)) - 1 AS reg_wow_pct_listing,\\n    wdl.reg_weekday_listing_pct AS reg_current_weekday_listing_pct,\\n    wdl.reg_last_weekday_listing_pct,\\n    (wdl.reg_weekday_listing_pct / NULLIF(wdl.reg_last_weekday_listing_pct, 0)) - 1 AS reg_wow_weekday_pct,\\n    wdl.reg_nvidia_amd_ratio AS reg_current_nvidia_amd_ratio,\\n    wdl.reg_last_nvidia_amd_ratio,\\n    (wdl.reg_nvidia_amd_ratio / NULLIF(wdl.reg_last_nvidia_amd_ratio, 0)) - 1 AS reg_wow_pct_nvidia_amd_ratio,\\n    \\n    -- These use the new reg_avg_price calculation\\n    wdl.reg_avg_price AS reg_current_week_avg_price,\\n    wdl.reg_last_week_avg_price,\\n    (wdl.reg_avg_price / NULLIF(wdl.reg_last_week_avg_price, 0)) - 1 AS reg_wow_pct_avg_price,\\n    \\n    wdl.reg_pct_above_avg_price AS reg_current_pct_above_avg_price,\\n    wdl.reg_last_pct_above_avg_price,\\n    (wdl.reg_pct_above_avg_price / NULLIF(wdl.reg_last_pct_above_avg_price, 0)) - 1 AS reg_wow_pct_above_avg_price,\\n\\n    wdl.reg_avg_msrp_delta AS reg_current_week_avg_msrp_delta,\\n    wdl.reg_last_week_avg_msrp_delta,\\n    CASE WHEN wdl.reg_last_week_avg_msrp_delta IS NULL OR ABS(wdl.reg_last_week_avg_msrp_delta) \u003C 0.01 THEN NULL ELSE (wdl.reg_avg_msrp_delta - wdl.reg_last_week_avg_msrp_delta) / ABS(wdl.reg_last_week_avg_msrp_delta) END AS reg_wow_pct_avg_msrp_delta,\\n    wdl.reg_num_msrp_listings AS reg_current_week_num_msrp_listings,\\n    wdl.reg_last_week_num_msrp_listings,\\n    (wdl.reg_num_msrp_listings / NULLIF(wdl.reg_last_week_num_msrp_listings, 0)) - 1 AS reg_wow_pct_num_msrp_listings,\\n    wdl.reg_msrp_listings_pct AS reg_current_week_msrp_listings_pct,\\n    wdl.reg_last_week_msrp_listings_pct,\\n    (wdl.reg_msrp_listings_pct / NULLIF(wdl.reg_last_week_msrp_listings_pct, 0)) - 1 AS reg_wow_msrp_listings_pct,\\n    wdl.reg_pct_over_20pct_msrp AS reg_current_pct_over_20pct_msrp,\\n    wdl.reg_last_pct_over_20pct_msrp,\\n    (wdl.reg_pct_over_20pct_msrp / NULLIF(wdl.reg_last_pct_over_20pct_msrp, 0)) - 1 AS reg_wow_pct_over_20pct_msrp,\\n    wdl.reg_daily_new_listings AS reg_current_week_daily_new_listings,\\n    wdl.reg_last_week_daily_new_listings,\\n    (wdl.reg_daily_new_listings / NULLIF(wdl.reg_last_week_daily_new_listings, 0)) - 1 AS reg_wow_daily_new_listings,\\n    wdl.reg_avg_minutes_between_listings AS reg_current_week_avg_minutes_between_listings,\\n    wdl.reg_last_week_avg_minutes_between_listings,\\n    (wdl.reg_last_week_avg_minutes_between_listings / NULLIF(wdl.reg_avg_minutes_between_listings, 0)) - 1 AS reg_wow_pct_time_between_listings,\\n    COALESCE(tcm.reg_top_gpu_card, 'N/A') AS reg_top_gpu_card,\\n    COALESCE(tm.reg_top_gpu_model, 'N/A') AS reg_top_gpu_model,\\n    COALESCE(mm.reg_most_msrpd_model, 'N/A') as reg_most_msrpd_model,\\n    COALESCE(mm.reg_most_msrpd_card, 'N/A') as reg_most_msrpd_card\\nFROM weekly_data_with_lag wdl\\nLEFT JOIN top_cards_models tcm ON wdl.week = tcm.week\\nLEFT JOIN top_models tm ON wdl.week = tm.week\\nLEFT JOIN most_msrpd mm ON wdl.week = mm.week\\nORDER BY wdl.week DESC;\",\"compiled\":false,\"inline\":true},{\"id\":\"daily_listings_by_manufacturer\",\"compiledQueryString\":\"WITH listings_base AS (\\n    SELECT\\n        MessageDateTime,\\n        strftime(MessageDateTime, '%a') AS dayweek,\\n        MessageID,\\n        Manufacturer,\\n        'regular' AS listing_type\\n    FROM gpu_data.gpu\\n    -- FROM gpu_messages\\n    WHERE MessageDateTime >= (CURRENT_DATE - INTERVAL '37 days')\\n\\n)\\n\\nSELECT\\n    dayweek,\\n    Manufacturer,\\n    COUNT(DISTINCT MessageID) FILTER (WHERE listing_type = 'regular') AS regular_listing_count\\nFROM listings_base\\nGROUP BY\\n    dayweek,\\n    Manufacturer\\nORDER BY\\n    CASE\\n        WHEN dayweek = 'Mon' THEN 1\\n        WHEN dayweek = 'Tue' THEN 2\\n        WHEN dayweek = 'Wed' THEN 3\\n        WHEN dayweek = 'Thu' THEN 4\\n        WHEN dayweek = 'Fri' THEN 5\\n        WHEN dayweek = 'Sat' THEN 6\\n        WHEN dayweek = 'Sun' THEN 7\\n    END ASC,\\n    Manufacturer ASC;\",\"inputQueryString\":\"WITH listings_base AS (\\n    SELECT\\n        MessageDateTime,\\n        strftime(MessageDateTime, '%a') AS dayweek,\\n        MessageID,\\n        Manufacturer,\\n        'regular' AS listing_type\\n    FROM gpu_data.gpu\\n    -- FROM gpu_messages\\n    WHERE MessageDateTime >= (CURRENT_DATE - INTERVAL '37 days')\\n\\n)\\n\\nSELECT\\n    dayweek,\\n    Manufacturer,\\n    COUNT(DISTINCT MessageID) FILTER (WHERE listing_type = 'regular') AS regular_listing_count\\nFROM listings_base\\nGROUP BY\\n    dayweek,\\n    Manufacturer\\nORDER BY\\n    CASE\\n        WHEN dayweek = 'Mon' THEN 1\\n        WHEN dayweek = 'Tue' THEN 2\\n        WHEN dayweek = 'Wed' THEN 3\\n        WHEN dayweek = 'Thu' THEN 4\\n        WHEN dayweek = 'Fri' THEN 5\\n        WHEN dayweek = 'Sat' THEN 6\\n        WHEN dayweek = 'Sun' THEN 7\\n    END ASC,\\n    Manufacturer ASC;\",\"compiled\":false,\"inline\":true}]}"}</script>
+			<script>
+				{
+					__sveltekit_1ehob3m = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("/_app/immutable/entry/start.D4UH2_gm.js"),
+						import("/_app/immutable/entry/app.MjppL0aT.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+
+			<!-- SplashScreen -->
+			<div
+				aria-disabled
+				id="__evidence_project_splash"
+				data-test-id="__evidence_project_splash"
+				style="visibility: hidden"
+			>
+				<svg width="100" height="100" viewBox="-8 -8 588 588" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M7.19462e-05 74.3583C109.309 74.3583 195.795 86.2578 286.834 37.825C377.872 -10.6077 466.416 1.29174 573.667 1.29175L573.667 126.549C466.416 126.549 377.373 114.91 286.834 163.082C196.294 211.254 109.309 199.615 6.11417e-05 199.615L7.19462e-05 74.3583Z"
+						class="draw-path"
+					/>
+					<path
+						d="M573.669 499.31C464.36 499.31 377.874 487.411 286.835 535.843C195.797 584.276 107.252 572.377 0.0014801 572.377V447.12C107.252 447.12 196.295 458.758 286.835 410.586C377.375 362.415 464.36 374.053 573.669 374.053V499.31Z"
+						class="draw-path"
+					/>
+					<path
+						d="M452.896 186.499C395.028 187.686 341.581 194.947 286.835 224.074C211.396 264.212 136.995 262.826 52.2355 261.247C35.2696 260.931 17.8887 260.608 0.0014801 260.608V385.865C18.1032 385.865 35.6721 386.204 52.81 386.534C137.212 388.162 211.162 389.589 286.835 349.331C341.838 320.07 395.18 312.831 452.896 311.685V186.499Z"
+						class="draw-path"
+					/>
+				</svg>
+			</div>
+		</div>
+	</body>
+</html>
+
+<style>
+	#__evidence_project_splash {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #ffffff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9999;
+	}
+
+	.theme-dark #__evidence_project_splash {
+		background-color: #000000;
+	}
+
+	.draw-path {
+		fill: #000000;
+		animation: blinking-logo 2s;
+		animation-fill-mode: both;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+
+	.theme-dark .draw-path {
+		fill: #ffffff;
+	}
+
+	@keyframes blinking-logo {
+		0% {
+			fill-opacity: 1;
+		}
+		50% {
+			fill-opacity: 0.2;
+		}
+		100% {
+			fill-opacity: 1;
+		}
+	}
+</style>
